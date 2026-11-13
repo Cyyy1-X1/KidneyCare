@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidneyCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>KidneyCare</h1>
+        <p class="welcome">Your Kidney health Companion</p>
+        <p id="status">Your account is Active</p>
+    </header>
+
+    <nav>
+        <a href="destination">Dashboard</a>
+        <a href="destination">Food Log</a>
+        <a href="destination">Profile</a>
+        <a href="https://www.google.com">This is a google</a>
+    </nav>
+
+    <main>
+        <section class="notification-card">
+
+            <div class="notification-header">
+                <h2>Notifications</h2>
+                <span class="badge">3</span>
+            </div>
+
+            <p>You have new Notifications!</p>
+        </section>
+        <div class="dashboard-cards">
+            <section class="information">
+                <h2>Daily Nutrient Summary</h2>
+                <p>Your nutrient information will appear here</p>
+            </section>
+
+            <section class="Food_log">
+                <form>
+                    <h2>Food Log</h2>
+                    <label for="food">Food Name: </label>
+                    <input type="text" id="food" placeholder="Enter Food Name" required> <br><br>
+
+                    <label for="quantity">Quantity: </label>
+                    <input type="number" id="quantity" placeholder="Quantity Needed" min="1" max="100" required>
+                    <br><br>
+
+                    <button type="submit">ADD FOOD</button>
+                    <button type="reset">CLEAR</button>
+                    <button type="button">VIEW FOOD</button>
+                </form>
+            </section>
+
+            <section class="Food_table">
+                    <h2>Food Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Quantity</th>
+                            <th>Calories</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Chicken</td>
+                            <td>100g</td>
+                            <td>165</td>
+                        </tr>
+
+                        <tr>
+                            <td>Rice</td>
+                            <td>1 Cup</td>
+                            <td>205</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <section class="user_info">
+            <form>
+                <h2>User Information</h2>
+
+                <label for="name">Enter Name: </label>
+                <input type="text" id="name" placeholder="Enter Name" required> <br><br>
+
+                <label for="email">Enter Email: </label>
+                <input type="email" id="email" placeholder="Enter Email" required> <br> <br>
+
+                <label for="date">Birthday Date:</label>
+                <input type="date" id="date" required> <br> <br>
+
+                <label for="password">Enter Password: </label>
+                <input type="password" id="password" placeholder="Enter password" required><br><br>
+
+                <label for="checkbox">i agree to the terms</label>
+                <input type="checkbox" id="checkbox" required><br><br>
+
+                <button type="submit">Create profile</button>
+            </form>
+        </section>
+
+        <section class="notif_prefer">
+            <form>
+                <fieldset>
+                    <legend>Notifications Preferences</legend>
+
+                    <input type="checkbox" id="email-notification">
+                    <label for="email-notification">Email Notifications</label><br><br>
+
+                    <input type="checkbox" id="sms">
+                    <label for="sms">SMS notifications</label>
+                </fieldset>
+            </form>
+        </section> <br><br>
+    </main>
+</body>
+
+</html>
