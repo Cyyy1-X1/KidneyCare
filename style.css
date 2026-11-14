@@ -2,14 +2,35 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
+.nav-menu {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  border-radius: 25px;
+  margin-bottom: 5px;
 }
 
+.nav-menu header {
+  padding-left: 20px;
+  color: rgb(132, 170, 151);
+}
+
+.nav-menu nav {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 35px;
+}
+
+.nav-menu nav a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.nav-menu nav a:hover {
+  background-color: #caedc6;
+}
 .notification-card {
   width: 100%;
   padding: 20px;
@@ -41,30 +62,16 @@ h2 {
   text-align: center;
 }
 
-.welcome {
-  color: gray;
-  text-align: center;
-}
-
-#status {
-  color: blue;
-  text-align: center;
-}
-
 body {
-  background-color: #f4f7f6;
+  background-color: #d2d8d6;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .Food_log,
-.information {
+.information,
+.Food_table {
   border: 2px solid gray;
   padding: 20px;
-}
-
-.Food_table {
-  min-width: 400px;
-  overflow-x: auto; 
 }
 .dashboard-cards {
   display: grid;
@@ -76,20 +83,17 @@ body {
 }
 
 @media (max-width: 900px) {
-  .dashboard-cards{
+  .dashboard-cards {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
-@media (max-width: 600px ) {
+@media (max-width: 600px) {
   .dashboard-cards {
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 600px) {
-  h2 {
-    font-size: 22px;
+  .nav-menu nav a{
+    
   }
 }
-
